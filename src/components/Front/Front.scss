@@ -1,0 +1,93 @@
+.cnt {
+    position: relative;
+    top: 0;
+    margin-top: 50px;
+    background-image: url("../../img/frontImg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    height: 650px;
+}
+
+.text-cnt {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
+    height: 200px;
+    padding: 7.5rem 5rem;
+
+    .space {
+        border-bottom: 1px solid white;
+        width: 100%;
+        margin: 0.5rem;
+    }
+}
+
+.header-cnt {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+
+    h1 {
+        color: white;
+        font-size: 70px;
+        font-weight: 400;
+    }
+
+    .btn-cnt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        button {
+            width: 300px;
+            height: 45px;
+            margin: 0.5rem;
+            border-radius: 8px;
+            background-color: white;
+            border: none;
+            font-size: 15px;
+        }
+
+        p {
+            color: white;
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+}
+
+.para-cnt {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+
+    .light {
+        color: white;
+        width: 600px;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 23px;
+    }
+
+    .bold {
+        width: 310px;
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 23px;
+    }
+}

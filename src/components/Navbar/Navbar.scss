@@ -1,0 +1,126 @@
+.nav {
+    padding: 0 1rem;
+    display: flex;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0edf2;
+    -webkit-box-shadow: 0px -8px 20px 2px #707070;
+    -moz-box-shadow: 0px -8px 20px 2px #707070;
+    -o-box-shadow: 0px -8px 20px 2px #707070;
+    box-shadow: 0px -8px 20px 2px #707070;
+    z-index: 10;
+}
+
+.icons,
+.navbar,
+.search-cnt {
+    flex: 1;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-cnt {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid #d9d5da;
+    padding: 0;
+    border-radius: 5px;
+    width: 408px;
+
+    &:hover {
+        background-color: #e4e1e5;
+        transition: 0.5s ease-in-out;
+        z-index: 1000;
+
+        .li ~ .active {
+            background-color: #d9d5da;
+            transition: 0.5s ease-in-out;
+        }
+    }
+}
+
+.li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 28px;
+    text-align: center;
+    padding: 0 1rem;
+    width: 105px;
+    font-size: 12px;
+    color: #434244;
+    text-decoration: none;
+    cursor: default;
+
+    & ~ .active {
+        background-color: #e4e1e5;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+}
+
+.space {
+    border-left: 1px solid #e4e1e5;
+    height: 18px;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    height: 60px;
+}
+
+.icons img {
+    height: 15px;
+}
+
+.search-bar img {
+    height: 40px;
+}
+
+input {
+    border: transparent;
+    background-color: #f0edf2;
+    background-image: url("../../img/search.png");
+    background-position: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 28px;
+    width: 180px;
+    border: 1px solid #d9d5da;
+    border-radius: 5px;
+    padding-left: 35px;
+
+    &::placeholder {
+        color: #b5b1b6;
+        font-size: 12px;
+        padding: 1rem 0;
+    }
+
+    &:focus {
+        outline: 4px solid #8eaaf0;
+        transition: 0.3s ease-in-out;
+    }
+}
